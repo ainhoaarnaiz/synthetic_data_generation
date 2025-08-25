@@ -40,8 +40,8 @@ def setup_camera(color: chess.Color) -> dict:
     board_center = mathutils.Vector((0., 0., 0.))
     # Randomize azimuth, radius and height
     azimuth = np.random.uniform(0, 360)
-    # Camera radius: min 4, max 9 (in SQUARE_LENGTH units)
-    radius = np.random.uniform(4 * SQUARE_LENGTH, 9 * SQUARE_LENGTH)
+    # Camera radius: min 4, max 10 (in SQUARE_LENGTH units)
+    radius = np.random.uniform(4 * SQUARE_LENGTH, 10 * SQUARE_LENGTH)
     x = radius * np.cos(np.deg2rad(azimuth))
     y = radius * np.sin(np.deg2rad(azimuth))
     # Camera height: min 8, max 14 (in SQUARE_LENGTH units)

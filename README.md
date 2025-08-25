@@ -1,5 +1,7 @@
 # Synthetic Dataset Generation with Blender (Windows)
 
+![Sample](./media/sample.png)
+
 This guide explains how to generate your own **synthetic chess dataset** using Blender on **Windows**. Is based on this repository: 👉 [https://github.com/georg-wolflein/chesscog](https://github.com/georg-wolflein/chesscog)
 
 ---
@@ -44,11 +46,13 @@ From the `synthetic_data_generation` project root directory, run:
 - `--background` → run Blender without GUI.  
 - `--python scripts/synthesize_data.py` → runs the dataset generation script.
 
+**Note:** In the script, you can choose to keep the camera and lights static (as configured in Blender) or make them dynamic to capture images from different angles and with varied lighting conditions.
+
 The output dataset will be created in the default path (`/render` or as configured in the script).
 
 ---
 
 ## 🔹 Step 5. (Optional) Create YOLO Dataset
-To convert from `.json` to a YOLO-style dataset, an additional Jupyter Notebook is provided. It generates `labels` and `images` folders inside the `/dataset` directory.
+To convert from `.json` to a YOLO-style dataset, an additional Jupyter Notebook is provided. It generates `labels` and `images` folders inside the `/dataset` directory. You will need to install `OpenCV` to run this.
 
 ✅ After completing these steps, you will have your own synthesized chess dataset generated with Blender!
